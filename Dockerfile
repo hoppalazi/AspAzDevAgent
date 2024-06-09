@@ -3,7 +3,11 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0.6-noble-amd64
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
     curl \
-    git
+    git \
+    gpg \
+    jq \
+    unzip \
+    wget
 
 # Set environment variable
 # Set the ACCEPT_EULA variable to Y value to confirm your acceptance of the End-User Licensing Agreement
