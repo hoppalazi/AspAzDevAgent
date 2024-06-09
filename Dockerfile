@@ -7,7 +7,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     gpg \
     jq \
     unzip \
-    wget
+    wget \
+    zip
 
 # Set environment variable
 # Set the ACCEPT_EULA variable to Y value to confirm your acceptance of the End-User Licensing Agreement
