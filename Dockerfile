@@ -2,6 +2,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0.6-noble-amd64
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
+    curl \
     git
 
 # Set environment variable
